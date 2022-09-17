@@ -8,7 +8,8 @@
 .navbar-container {
   width: 100%;
   height: 70px;
-  background-color: #7158e2;
+  background-color: #EEF3FF;
+  box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
@@ -26,8 +27,9 @@
 .logo {
   display: flex;
   align-items: center;
-  color: white;
+  color: #556987;
   font-size: 1.2rem;
+  gap: 0.5rem;
   font-family: sans-serif;
 }
 
@@ -38,6 +40,7 @@
   align-items: center;
   list-style: none;
   cursor: pointer;
+  background-color: #EEF3FF;
 }
 
 .menu-item {
@@ -48,7 +51,7 @@
   display: flex;
   align-items: center;
   height: inherit;
-  color: #ffffff;
+  color: #556987;
   justify-content: center;
   padding: 0.5rem 2.5rem;
   font-family: sans-serif;
@@ -60,7 +63,8 @@
 }
 
 .menu-link:hover {
-  background-color: #634dc5;
+  color: #2A3342;
+  background-color: #CEE0FD;
 }
 
 .mobile-menu {
@@ -76,6 +80,13 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.4s;
+    border-radius: 7px;
+  }
+
+  .mobile-menu:hover {
+    background-color: #CEE0FD;
   }
 
   .menu {
@@ -88,7 +99,8 @@
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
-    background-color: #7158e2;
+    color: #2A3342;
+    box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.3);
   }
 
   .menu-item {

@@ -4,6 +4,7 @@ type Props = {
   children?: string;
   to: string;
 };
+
 export const NavbarItem = ({ children, to }: Props) => {
   const { toggleMenu } = useNavbarContext();
   return (
