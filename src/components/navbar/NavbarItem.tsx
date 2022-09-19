@@ -8,8 +8,8 @@ type Props = {
 export const NavbarItem = ({ children, to }: Props) => {
   const { toggleMenu } = useNavbarContext();
   return (
-    <li className="menu-item" onClick={toggleMenu}>
-      <a href={to} className="menu-link">
+    <li className="nav-item" onClick={toggleMenu}>
+      <a href={to} className="nav-link">
         {children}
       </a>
     </li>

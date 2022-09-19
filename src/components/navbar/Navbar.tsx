@@ -5,7 +5,6 @@ import { useNavbarContext } from "./context/navbar.context";
 
 export const Navbar = () => {
   const { toggleMenu, showMenu } = useNavbarContext();
-
   return (
     <header className="navbar-container">
       <nav className="navbar">
@@ -18,14 +17,17 @@ export const Navbar = () => {
           <img src={iconMenu} alt="menu" />
         </button>
 
-        <ul className={`menu ${!showMenu && "hide-menu"}`}>
+        <ul className={`nav-menu ${!showMenu && "hide-menu"}`}>
           <NavbarItem to="/home">Home</NavbarItem>
 
           <NavbarItem to="/aboutme">About me</NavbarItem>
 
           <NavbarItem to="/contactme">Contact me</NavbarItem>
+
         </ul>
       </nav>
     </header>
   );
 };
+
+// {} [] !== => >=

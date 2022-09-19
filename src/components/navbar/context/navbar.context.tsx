@@ -28,7 +28,7 @@ export const NavbarProvider = ({ children }: NavbarProvider) => {
 export const useNavbarContext = () => {
   const context = useContext(NavbarContext);
   if (context === undefined) {
-    throw new Error("NavbarContext must be used within a GentlemanProvider");
+    throw new Error("NavbarContext must be used within a NavbarProvider");
   }
   return context;
 };
